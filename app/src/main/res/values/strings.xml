@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">NowMusic!</string>
+
+    <!-- Button Strings-->
+    <string name="music_now">Music \nNow!</string>
+    <string name="take_me_home">Take me  \nhome!</string>
+    <string name="take_a_chance">Take a  \nchance</string>
+    <string name="my_run">my run</string>
+    <string name="my_friends_button">My Friends</string>
+    <string name="settings">Settings</string>
+
+    <!-- Text strings for the Activity text views -->
+
+    <string name="home_text">This screen will contain the following sections: Genres, New Releases, Charts ,Library, Search, Friends, Playlists and a
+        back button to get back to the welcome screen.
+        The style will follow the bubble theme of the welcome page. The selected bubble will bursts or pop and an explicit intent will call the
+        relevant Activity. An option to get to the music player page called the MusicNow Activity will be available on this and all
+        the other Activitiy Pages. This will be in the form of a slider which will overlay the current page.
+    </string>
+
+    <string name="music_now_text">This is the media player page. It can be accessed directly from the welcome page or it can be accessed
+    via  swiping the MusicNow! icon which will appear on every activity, giving instant access to the media player page from anywhere.
+    It will contain a Linear Layout with vertical orientation as the parent and will contain some children.
+        The top half of the screen will contain an image view of the album  of the selected artist. Just below this will be the time line which indicates,
+        in minutes and seconds and by a slider, how far through the record is. Then a child view of linear layout horizontal orientation will contain
+        the the play, fast forward, rewind, skip forward, skip back buttons. Below that will by another child view of the same construction containing the
+        shuffle and repeat buttons. The playlist can be accessed by a small arrow in the left corner which will expand the playlist. There will be a camera
+    icon in the lower right corner. This accesses the memories feature which diplays photos from the phone\'s photo album whilst music is playing
+    In the top right hand corner will be a movie camera icon. Pressing this calls a explicit  intent which will open a default camera app which has a wide angle
+        lens feature. Once selected the app will record the user and their friends singing to the current song that is playing. This will then be uploaded
+    to the user\'s social media apps.
+    Functionality: The MediaPlayerControl interface will need to be implemented. This will provide the playback buttons. From the research
+    that I have done I think a Service class which offers playback control, navigation in and out of the app whilst music is playing will also be needed.
+        The following classes will also be needed:  Notification, Pending Intent, Content Resolver, Media Controller, cursor and some custom classes.
+        Connection to a  cloud storage will be required with the option to download.
+    </string>
+
+    <string name="my_run_text">This page is available from the welcome screen. It is essentially a collection of playlists that the user
+    has composed for the purpose of running to. It contains a feature FriendsRuns. This will contain a collection of playlists that
+    friends of the user use for their running sessions. The media player is accessible once the playlist is chosen.</string>
+
+
+    <string name="take_a_chance_text">This is accessible from the welcome page. It does what it says on the tin. It will pick a random
+    song for the listener to listen to with the aim of broadening the user\'s music tastes.</string>
+
+
+    <string name="settings_text_view">This will contain the following settings: Social - displays what you are listening to on all the selected social media
+    so that the user\'s friends can see the current song being played; Graphic Equalizer; </string>
+
+
+    <string name="my_friends_text_view">This activity will contain a list view containing the user\'s friends. Each list item will contain a friend\'s name.
+    The user selects a friend and a new list view is displayed showing the names of the friend\'s playlists. The user can select a playlist and this will
+    initialise in the user\'s media player. A message will be sent to the friend using an explicit intent which calls the in app messaging service.
+        The message notification will appear in the friend\'s status bar, which when opened will state the sender and the music track listened to.
+    </string>
+
+
+</resources>

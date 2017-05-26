@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#A9F9FF"
+    tools:context="com.example.android.nowmusic.MainActivity"
+    >
+
+    <!-- Ideally the Take Me Home Button will be connected to the other buttons with lines. When
+    any of the buttons are pressed the lines illuminate, radiating from the pressed button to
+    the other buttons which then explode.
+    The main idea of this app is to keep the layout clean. Many music apps have many options on
+    each page which can present a cluttered appearance. The activities in this app tend concentrate
+    on one function. So the My Run activity deals only with music related to running. The Music Now
+    button gets music playing quickly. The user interface should be easy and intuitive to use-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_screen"
+
+
+        />
+
+    <Button
+        android:id="@+id/music_now_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/music_now_button"
+        android:text="@string/music_now"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="37dp"
+        android:layout_below="@+id/home_screen"
+        android:layout_toRightOf="@+id/home_screen"
+        android:layout_toEndOf="@+id/home_screen" />
+
+     <Button
+        android:id="@+id/take_me_home_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/take_me_home_button"
+        android:text="@string/take_me_home"
+         android:layout_centerVertical="true"
+         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/take_a_chance_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/take_a_chance_button"
+        android:text="@string/take_a_chance"
+        android:layout_marginBottom="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/take_me_home_button"
+        android:layout_alignStart="@+id/take_me_home_button" />
+
+    <Button
+        android:id="@+id/my_run_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_run_button"
+        android:text="@string/my_run"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_alignTop="@+id/music_now_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+
+</RelativeLayout>
