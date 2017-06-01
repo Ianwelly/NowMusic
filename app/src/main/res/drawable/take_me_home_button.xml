@@ -1,11 +1,14 @@
-<shape android:shape="oval"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
 
-    <solid android:color="#9E9E9E">
-    </solid>
+    <solid android:color="@color/buttonBackground"></solid>
 
-    <stroke android:color="#424242" android:width="2dp"> </stroke>
+    <stroke
+        android:width="@dimen/strokeWidth"
+        android:color="@color/strokeColor"></stroke>
 
-    <size android:height="100dp" android:width="100dp"> </size>
+    <size
+        android:width="@dimen/button_width"
+        android:height="@dimen/button_height"></size>
 
 </shape>

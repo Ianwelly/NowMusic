@@ -1,10 +1,11 @@
 package com.example.android.nowmusic;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
-import android.view.View;
-import android.widget.TextView;
+        import android.content.Intent;
+        import android.os.Bundle;
+        import android.support.v7.app.AppCompatActivity;
+        import android.view.View;
+        import android.widget.Button;
+        import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,25 +16,18 @@ public class MainActivity extends AppCompatActivity {
 
         //MusicNow OnClickListener
 
-
-
-        TextView musicNowTextView = (TextView) findViewById(R.id.music_now_button);
-
+        Button musicNowTextView = (Button) findViewById(R.id.music_now_button);
 
         musicNowTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, MusicNowActivity.class);
                 startActivity(intent);
-
-            }
-
-            }
+            }}
         );
         //================================================================================
 
         //MyRun OnClickListener
-
 
         TextView myRunTextView = (TextView) findViewById(R.id.my_run_button);
 
@@ -42,14 +36,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, MyRunActivity.class);
                 startActivity(intent);
-
             }
         });
 
         //===================================================================================
 
         //TakeAChance OnClickListener
-
 
         TextView chanceTextView = (TextView) findViewById(R.id.take_a_chance_button);
 
@@ -65,17 +57,14 @@ public class MainActivity extends AppCompatActivity {
 
         //TakeMeHome OnClickListener
 
-
         TextView takeMeHomeTextView = (TextView) findViewById(R.id.take_me_home_button);
 
         takeMeHomeTextView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent  intent = new Intent(MainActivity.this, TakeMeHome.class);
+                Intent intent = new Intent(MainActivity.this, TakeMeHome.class);
                 startActivity(intent);
             }
         });
-
-
     }
 }

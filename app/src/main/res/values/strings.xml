@@ -8,6 +8,8 @@
     <string name="my_run">my run</string>
     <string name="my_friends_button">My Friends</string>
     <string name="settings">Settings</string>
+    <string name="button_back">back</string>
+    <string name="button_home">start</string>
 
     <!-- Text strings for the Activity text views -->
 
@@ -39,20 +41,16 @@
     has composed for the purpose of running to. It contains a feature FriendsRuns. This will contain a collection of playlists that
     friends of the user use for their running sessions. The media player is accessible once the playlist is chosen.</string>
 
-
     <string name="take_a_chance_text">This is accessible from the welcome page. It does what it says on the tin. It will pick a random
     song for the listener to listen to with the aim of broadening the user\'s music tastes.</string>
 
-
     <string name="settings_text_view">This will contain the following settings: Social - displays what you are listening to on all the selected social media
     so that the user\'s friends can see the current song being played; Graphic Equalizer; </string>
-
 
     <string name="my_friends_text_view">This activity will contain a list view containing the user\'s friends. Each list item will contain a friend\'s name.
     The user selects a friend and a new list view is displayed showing the names of the friend\'s playlists. The user can select a playlist and this will
     initialise in the user\'s media player. A message will be sent to the friend using an explicit intent which calls the in app messaging service.
         The message notification will appear in the friend\'s status bar, which when opened will state the sender and the music track listened to.
     </string>
-
 
 </resources>

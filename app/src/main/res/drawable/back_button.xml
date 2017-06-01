@@ -10,5 +10,4 @@
     <size
         android:width="@dimen/button_width"
         android:height="@dimen/button_height"></size>
-
 </shape>
