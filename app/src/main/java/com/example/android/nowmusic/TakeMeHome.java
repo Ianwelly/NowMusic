@@ -13,12 +13,12 @@ public class TakeMeHome extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_take_me_home);
 
-        Button homeButton = (Button) findViewById(R.id.button_home);
+        Button settingsButton = (Button) findViewById(R.id.button_settings);
 
-        homeButton.setOnClickListener(new View.OnClickListener() {
+        settingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(TakeMeHome.this, MainActivity.class);
+                Intent intent = new Intent(TakeMeHome.this, SettingsActivity.class);
                 startActivity(intent);
             }
         });
